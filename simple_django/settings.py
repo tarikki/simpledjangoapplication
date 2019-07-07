@@ -25,7 +25,7 @@ SECRET_KEY = 'rzympv$1y-d8at=p0i^81w9^xq3cdta-op*lmr7@(=p48=!ngq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.environ.get('CURRENT_HOST', 'localhost'), '127.0.0.1']
 
 
 # Application definition
